@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Форма отзыва</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -24,12 +26,12 @@
         </ul>
       </nav>
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Логотип Седона">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="101.668" height="83.984" alt="Логотип Седона">
       </a>
     </header>
     <main class="page-main">
       <div class="banner">
-        <img class="banner__image  banner__image--small" src="img/banner-small-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
+        <img class="banner__image  banner__image--small" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Добро пожаловать в Седону!">
       </div>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
@@ -59,18 +61,18 @@
           <fieldset class="form__item  item">
             <legend class="item__title">Ваше общее впечатление:</legend>
             <ul class="item__radio radio">
-              <li class="radio__option">Скорее положительное
-                <label class="radio__label">
+              <li class="radio__option">
+                <label class="radio__label">Скорее положительное
                 <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="good" checked>
                 </label>
               </li>
-              <li class="radio__option">Скорее отрицательное
-                <label class="radio__label">
+              <li class="radio__option">
+                <label class="radio__label">Скорее отрицательное
                 <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="bad">
                 </label>
               </li>
-              <li class="radio__option">Затрудняюсь ответить
-                <label class="radio__label">
+              <li class="radio__option">
+                <label class="radio__label">Затрудняюсь ответить
                 <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="middle">
                 </label>
               </li>
@@ -79,26 +81,26 @@
           <fieldset class="form__item  item">
             <legend class="item__title">Посещенные достопримечательности:</legend>
             <ul class="item__checkbox checkbox">
-                <li class="checkbox__option">
-                  <label class="checkbox__label">Мост Дьявола
+              <li class="checkbox__option">
+                <label class="checkbox__label">Мост Дьявола
                   <input class="visually-hidden  checkbox__input" type="checkbox" name="The Devil's Bridge" checked>
-                  </label>
-                </li>
-                <li class="checkbox__option">
-                  <label class="checkbox__label">Гора-Колокол
+                </label>
+              </li>
+              <li class="checkbox__option">
+                <label class="checkbox__label">Гора-Колокол
                   <input class="visually-hidden  checkbox__input" type="checkbox" name="Hora-Bell" checked>
-                  </label>
-                </li>
-                <li class="checkbox__option">
-                  <label class="checkbox__label">Слайд-парк
+                </label>
+              </li>
+              <li class="checkbox__option">
+                <label class="checkbox__label">Слайд-парк
                   <input class="visually-hidden  checkbox__input" type="checkbox" name="Slide-park" checked>
-                  </label>
-                </li>
-                <li class="checkbox__option">
-                  <label class="checkbox__label">Красные скалы
+                </label>
+              </li>
+              <li class="checkbox__option">
+                <label class="checkbox__label">Красные скалы
                   <input class="visually-hidden  checkbox__input" type="checkbox" name="Red rocks">
-                  </label>
-                </li>
+                </label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="form__item  item">
@@ -114,27 +116,28 @@
         <b class="social__title">#Visitsedona</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакт</a>
+            <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy_ru?lang=ru">Твиттер</a>
           </li>
           <li class="social__item">
             <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            <a class="social__link  social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright  copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="copyright__text">Разработано:
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </p>
       </div>
     </footer>
-    <section class="failure-pop-up pop-up">
+    <section class="pop-up  pop-up--failure">
       <h3 class="pop-up__title">Что-то пошло не так!</h3>
       <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="pop-up__button button">Ок</button>
     </section>
-    <section class="success-pop-up pop-up">
+    <section class="pop-up  pop-up--success">
       <h3 class="pop-up__title">Ваш отзыв отправлен!</h3>
       <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <button class="pop-up__button button">Закрыть окно</button>
