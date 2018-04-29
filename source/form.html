@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Форма отзыва</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -22,11 +24,13 @@
           <li class="main-nav__item">
             <a href="#">HTML Academy</a>
           </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
+            </a>
+          </li>
         </ul>
       </nav>
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
-      </a>
     </header>
     <main class="page-main">
       <div class="banner">
@@ -36,47 +40,49 @@
         <h1 class="review__title">Оставьте свой отзыв</h1>
         <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__item  item">
-            <legend class="item__title">Представьтесь:</legend>
-            <label class="item__label">Имя*:
-              <input class="item__input" type="text" name="user-name" placeholder="Петр" required>
-            </label>
-            <label class="item__label">Фамилия*:
-              <input class="item__input" type="text" name="user-surname" placeholder="Иванов" required>
-            </label>
-            <label class="item__label">Отчество:
-              <input class="item__input" type="text" name="user-patronymic" placeholder="Александрович">
-            </label>
-          </fieldset>
-          <fieldset class="form__item item">
-            <legend class="item__title">Контактная информация:</legend>
-            <label class="item__label">Контактный телефон*:
-              <input class="item__input" type="tel" name="user-tel" placeholder="Введите телефон" required>
-            </label>
-            <label class="item__label">Электронная почта*:
-              <input class="item__input" type="email" name="user-email" placeholder="Введите e-mail" required>
-            </label>
-          </fieldset>
-          <fieldset class="form__item  item">
-            <legend class="item__title">Ваше общее впечатление:</legend>
-            <ul class="item__radio radio">
-              <li class="radio__option">
-                <label class="radio__label">Скорее положительное
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="good" checked>
-                </label>
-              </li>
-              <li class="radio__option">
-                <label class="radio__label">Скорее отрицательное
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="bad">
-                </label>
-              </li>
-              <li class="radio__option">
-                <label class="radio__label">Затрудняюсь ответить
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="middle">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__item  item">
+              <legend class="item__title">Представьтесь:</legend>
+              <label class="item__label">Имя*:
+                <input class="item__input" type="text" name="user-name" placeholder="Петр" required>
+              </label>
+              <label class="item__label">Фамилия*:
+                <input class="item__input" type="text" name="user-surname" placeholder="Иванов" required>
+              </label>
+              <label class="item__label">Отчество:
+                <input class="item__input" type="text" name="user-patronymic" placeholder="Александрович">
+              </label>
+            </fieldset>
+            <fieldset class="form__item item">
+              <legend class="item__title">Контактная информация:</legend>
+              <label class="item__label">Контактный телефон*:
+                <input class="item__input" type="tel" name="user-tel" placeholder="Введите телефон" required>
+              </label>
+              <label class="item__label">Электронная почта*:
+                <input class="item__input" type="email" name="user-email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+            <fieldset class="form__item  item">
+              <legend class="item__title">Ваше общее впечатление:</legend>
+              <ul class="item__radio radio">
+                <li class="radio__option">
+                  <label class="radio__label">Скорее положительное
+                    <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="good" checked>
+                  </label>
+                </li>
+                <li class="radio__option">
+                  <label class="radio__label">Скорее отрицательное
+                    <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="bad">
+                  </label>
+                </li>
+                <li class="radio__option">
+                  <label class="radio__label">Затрудняюсь ответить
+                    <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="middle">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__item  item">
             <legend class="item__title">Посещенные достопримечательности:</legend>
             <ul class="item__checkbox checkbox">
@@ -106,7 +112,7 @@
             <legend class="item__title">Опишите свои эмоции:</legend>
             <textarea class="item__textarea" name="user-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="form__submit button" type="submit">Отправить отзыв</button>
+          <button class="form__item button" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>

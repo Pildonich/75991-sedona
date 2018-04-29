@@ -1,3 +1,27 @@
+@media (min-width: @tablet-width) {
+  .features-item {
+    display: flex;
+  }
+
+  .features-item__wrapper {
+    width: 256px;
+  }
+
+  .features-item__image {
+    width: 512px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-item__wrapper {
+    width: 400px;
+  }
+
+  .features-item__image {
+    width: 800px;
+  }
+}
+
 .features-item__wrapper {
   background-color: @bg-color;
 }

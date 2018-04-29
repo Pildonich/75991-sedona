@@ -1,7 +1,3 @@
-/*.social {
-
-}
-*/
 .social__title {
   margin: 0;
   padding: 0;
@@ -14,6 +10,29 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: 452px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social__list {
+    width: 256px;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    width: 680px;
+  }
+
+  .social__list {
+    width: 400px;
+  }
 }
 /*
 .social__item {
