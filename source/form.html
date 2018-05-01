@@ -9,23 +9,23 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="site-list__item">
             <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item  main-nav__item--active">
+          <li class="site-list__item   site-list__item--active">
             <a>Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
+          <li class="site-list__item">
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-        <a class="main-nav__logo">
+        <a class="main-nav__logo"  href="index.html">
           <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
         </a>
       </nav>
@@ -132,5 +132,7 @@
       <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <button class="pop-up__button button">Закрыть окно</button>
     </section>
+    <script src="js/scripts.js">
+    </script>
   </body>
 </html>
