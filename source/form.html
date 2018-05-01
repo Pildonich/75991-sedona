@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Форма отзыва</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,10 +25,10 @@
             <a href="#">HTML Academy</a>
           </li>
         </ul>
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
+        </a>
       </nav>
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
-      </a>
     </header>
     <main class="page-main">
       <div class="banner">
@@ -38,42 +40,34 @@
         <form class="review__form form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__item  item">
             <legend class="item__title">Представьтесь:</legend>
-            <label class="item__label">Имя*:
-              <input class="item__input" type="text" name="user-name" placeholder="Петр" required>
-            </label>
-            <label class="item__label">Фамилия*:
-              <input class="item__input" type="text" name="user-surname" placeholder="Иванов" required>
-            </label>
-            <label class="item__label">Отчество:
-              <input class="item__input" type="text" name="user-patronymic" placeholder="Александрович">
-            </label>
+            <label class="item__label" for="user-name">Имя*:</label>
+            <input class="item__input" id="user-name" type="text" name="user-name" placeholder="Петр" required>
+            <label class="item__label" for="user-surname">Фамилия*:</label>
+            <input class="item__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов" required>
+            <label class="item__label" for="user-patronymic">Отчество:</label>
+            <input class="item__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
           </fieldset>
           <fieldset class="form__item item">
             <legend class="item__title">Контактная информация:</legend>
-            <label class="item__label">Контактный телефон*:
-              <input class="item__input" type="tel" name="user-tel" placeholder="Введите телефон" required>
-            </label>
-            <label class="item__label">Электронная почта*:
-              <input class="item__input" type="email" name="user-email" placeholder="Введите e-mail" required>
-            </label>
+            <label class="item__label" for="user-tel">Контактный телефон*:</label>
+            <input class="item__input" id="user-tel" type="tel" name="user-tel" placeholder="Введите телефон" required>
+            <label class="item__label" for="user-email">Электронная почта*:</label>
+            <input class="item__input" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="form__item  item">
             <legend class="item__title">Ваше общее впечатление:</legend>
             <ul class="item__radio radio">
               <li class="radio__option">
-                <label class="radio__label">Скорее положительное
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="good" checked>
-                </label>
+                <label class="radio__label" for="good">Скорее положительное</label>
+                <input class="visually-hidden  radio__input" id="good" type="radio" name="radio-group" value="good" checked>
               </li>
               <li class="radio__option">
-                <label class="radio__label">Скорее отрицательное
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="bad">
-                </label>
+                <label class="radio__label" for="bad">Скорее отрицательное</label>
+                <input class="visually-hidden  radio__input" id="bad" type="radio" name="radio-group" value="bad">
               </li>
               <li class="radio__option">
-                <label class="radio__label">Затрудняюсь ответить
-                <input class="visually-hidden  radio__input" type="radio" name="radio-group" value="middle">
-                </label>
+                <label class="radio__label" for="middle">Затрудняюсь ответить</label>
+                <input class="visually-hidden  radio__input" id="middle" type="radio" name="radio-group" value="middle">
               </li>
             </ul>
           </fieldset>
@@ -81,24 +75,20 @@
             <legend class="item__title">Посещенные достопримечательности:</legend>
             <ul class="item__checkbox checkbox">
               <li class="checkbox__option">
-                <label class="checkbox__label">Мост Дьявола
-                  <input class="visually-hidden  checkbox__input" type="checkbox" name="The Devil's Bridge" checked>
-                </label>
+                <label class="checkbox__label" for="The-Devil's-Bridge">Мост Дьявола</label>
+                <input class="visually-hidden  checkbox__input" id="The-Devil's-Bridge" type="checkbox" name="The Devil's Bridge" checked>
               </li>
               <li class="checkbox__option">
-                <label class="checkbox__label">Гора-Колокол
-                  <input class="visually-hidden  checkbox__input" type="checkbox" name="Hora-Bell" checked>
-                </label>
+                <label class="checkbox__label" for="Hora-Bell">Гора-Колокол</label>
+                <input class="visually-hidden  checkbox__input" id="Hora-Bell" type="checkbox" name="Hora-Bell" checked>
               </li>
               <li class="checkbox__option">
-                <label class="checkbox__label">Слайд-парк
-                  <input class="visually-hidden  checkbox__input" type="checkbox" name="Slide-park" checked>
-                </label>
+                <label class="checkbox__label" for="Slide-park">Слайд-парк</label>
+                <input class="visually-hidden  checkbox__input" id="Slide-park" type="checkbox" name="Slide-park" checked>
               </li>
               <li class="checkbox__option">
-                <label class="checkbox__label">Красные скалы
-                  <input class="visually-hidden  checkbox__input" type="checkbox" name="Red rocks">
-                </label>
+                <label class="checkbox__label" for="Red-rocks">Красные скалы</label>
+                <input class="visually-hidden  checkbox__input" id="Red-rocks" type="checkbox" name="Red rocks">
               </li>
             </ul>
           </fieldset>
@@ -106,7 +96,8 @@
             <legend class="item__title">Опишите свои эмоции:</legend>
             <textarea class="item__textarea" name="user-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="form__submit button" type="submit">Отправить отзыв</button>
+          <button class="form__item button" type="submit">Отправить отзыв</button>
+          <p class="form__item note">* — обязательные поля</p>
         </form>
       </section>
     </main>
