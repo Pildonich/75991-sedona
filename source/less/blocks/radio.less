@@ -1,19 +1,47 @@
-/*
 .radio {
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
+/*
 .radio__option {
 
 }
 */
 .radio__label {
+  position: relative;
+  display: block;
   margin: 0;
   padding: 0;
+  padding-left: 70px;
+  margin-bottom: 60px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio__input + .radio__label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 16px;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border-radius: 50%;
 }
 /*
 .radio__input {

@@ -1,14 +1,16 @@
-/*
 .item {
-
+  display: flex;
+  border: none;
 }
-*/
+
 .item__title {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 20px 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .item__label {
@@ -17,17 +19,19 @@
   font-size: 14px;
   line-height: 26px;
   color: @text-color-secondary;
+  text-transform: uppercase;
 }
-/*
-.item__input {
 
+.item__input {
+  height: 56px;
+  border: none;
 }
-*/
+
 .item__input::placeholder {
-  margin: 0;
-  padding: 0;
+  padding: 16px;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
   color: @text-color-additional;
   background-color: @bg-color-secondary;
 }
