@@ -2,13 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 78px;
 }
 
 .form__item {
   margin: 0;
-  padding: 0;
+  margin-bottom: 50px;
+  padding: 0 20px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.form__item + .button {
+  margin: 0 auto;
+  width: 280px;
 }
 
 .form__item:nth-child(1) {
@@ -41,6 +49,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    padding: 0 60px;
+    margin-bottom: 100px;
+  }
+
+  .form__item {
+    padding: 0;
+  }
+
   .form__item:nth-child(1) {
     order: 2;
     width: 50%;
@@ -63,6 +80,23 @@
   .form__item:nth-child(7) {
     width: 50%;
     display: block;
+  }
+
+  .form__item + .button {
+    margin: 0;
+  }
+
+  .form__item--note {
     text-align: right;
+    margin: 0;
+    font-size: 14px;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    padding: 0 120px;
   }
 }

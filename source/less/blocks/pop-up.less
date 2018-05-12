@@ -1,33 +1,42 @@
-/*
 .pop-up {
-
+  display: none;
+  z-index: 2;
+  width: 320px;
+  padding-top: 45px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
 }
 
-.pop-up--failure {
-
-}
-
-.pop-up--success {
-
-}
-*/
 .pop-up__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .pop-up__text {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 0;
+  width: 220px;
   font-size: 14px;
   line-height: 24px;
   color: @text-color-secondary;
+  text-transform: uppercase;
+  text-align: center;
 }
-/*
-.pop-up__button {
 
+.pop-up__button {
+  margin: 0 auto;
 }
-*/
+
+.pop-up--failure .pop-up__button {
+  width: 180px;
+}
+
+.pop-up--success .pop-up__button {
+  width: 280px;
+}
