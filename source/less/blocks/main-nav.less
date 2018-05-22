@@ -9,7 +9,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 22px;
   z-index: 2;
 
   display: block;
@@ -103,5 +103,12 @@
 
   .main-nav__logo {
     min-height: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-image {
+    width: 187px;
+    height: 96px;
   }
 }

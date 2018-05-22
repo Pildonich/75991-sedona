@@ -5,9 +5,12 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -27,67 +30,88 @@
             </li>
           </ul>
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+            </picture>
           </a>
         </nav>
       </header>
       <main class="page-main">
         <div class="banner">
-          <img class="banner__image" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Добро пожаловать в Седону!">
+          <img class="banner__image" src="img/text-sedona-index.svg" width="460" height="350" alt="Добро пожаловать в Седону!">
         </div>
         <section class="features">
           <h1 class="features__title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <div class="features-item">
-            <div class="features-item__wrapper">
-              <h3 class="features-item__title">Настоящий городок</h3>
+            <div class="features-item__wrapper  features-item__wrapper--triangle">
+              <h3 class="features-item__title  features-item__title--triangle">Настоящий городок</h3>
               <span class="features-item__number">– №1 –</span>
               <p class="features-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="features-item__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="features-item__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+              </picture>
           </div>
           <ul class="features-list list">
             <li class="list__item">
+              <svg class="list__icon list__icon--house" width="39" height="37"><use xlink:href="#icon-house"></use></svg>
               <b class="list__title">Жилье</b>
-              <p class="list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="list__text">Рекомендуем пожить в настоящем мотеле, все как&nbsp;в кино!</p>
             </li>
             <li class="list__item">
+              <svg class="list__icon list__icon--gift" width="32" height="38"><use xlink:href="#icon-gift"></use></svg>
               <b class="list__title">Сувениры</b>
               <p class="list__text">Не только китайского, но и местного производства!</p>
             </li>
             <li class="list__item">
+              <svg class="list__icon list__icon--burger" width="40" height="35"><use xlink:href="#icon-burger"></use></svg>
               <b class="list__title">Еда</b>
-              <p class="list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="list__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
             </li>
           </ul>
           <div class="features-item features-item--order">
             <div class="features-item__wrapper">
-              <h3 class="features-item__title">Там есть мост дьявола</h3>
+              <h3 class="features-item__title">Там есть мост&nbsp; дьявола</h3>
               <span class="features-item__number">– №2 –</span>
-              <p class="features-item__text">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
+              <p class="features-item__text">Да, по нему можно пройтись! Если&nbsp;вы осмелитесь, конечно</p>
             </div>
-            <img class="features-item__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img class="features-item__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+            </picture>
           </div>
           <div class="features__wrapper">
             <div class="features-item">
               <div class="features-item__wrapper  features-item__wrapper--noimg">
                 <h3 class="features-item__title  features-item__title--noimg">Небольшая площадь</h3>
                 <span class="features-item__number  features-item__number--noimg">– №3 –</span>
-                <p class="features-item__text  features-item__text--noimg">Все интересные места находятся очень близко</p>
+                <p class="features-item__text  features-item__text--noimg">Все интересные места находятся очень&nbsp;близко</p>
               </div>
             </div>
             <div class="features-item">
               <div class="features-item__wrapper  features-item__wrapper--noimg">
                 <h3 class="features-item__title  features-item__title--noimg">Красивая дорога</h3>
                 <span class="features-item__number  features-item__number--noimg">– №4 –</span>
-                <p class="features-item__text  features-item__text--noimg">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+                <p class="features-item__text  features-item__text--noimg">Ехать в Седону&nbsp;из Лас-вегаса совсем&nbsp;не&nbsp;скучно!</p>
               </div>
             </div>
             <div class="features-item">
               <div class="features-item__wrapper  features-item__wrapper--noimg">
                 <h3 class="features-item__title  features-item__title--noimg">Мало туристов</h3>
                 <span class="features-item__number  features-item__number--noimg">– №5 –</span>
-                <p class="features-item__text  features-item__text--noimg">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="features-item__text  features-item__text--noimg">Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
               </div>
             </div>
           </div>
