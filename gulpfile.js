@@ -26,11 +26,9 @@ gulp.task("copy", function () {
     })
     .pipe(gulp.dest("build"));
 });
-
 gulp.task("clean", function () {
   return del("build");
 });
-
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -81,11 +79,9 @@ gulp.task("serve",  function() {
   server.init({
     server: "build/"
   });
-
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]);
 });
-
 gulp.task("build", function (done) {
   run("clean", "copy", "style", "sprite", "html", done);
 });
