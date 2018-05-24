@@ -44,7 +44,7 @@
 @media (min-width: @tablet-width) {
   .hotel-search {
     margin: 0 auto;
-    width: auto;
+    width: @tablet-width;
   }
 
   .hotel-search__button {
@@ -54,7 +54,7 @@
   }
 
   .hotel-search__text {
-    width: 435px;
+    width: 440px;
     margin-bottom: 42px;
   }
 
@@ -74,6 +74,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .hotel-search {
+    width: @desktop-width;
+  }
+
   .hotel-search__map {
     width: @desktop-width;
   }

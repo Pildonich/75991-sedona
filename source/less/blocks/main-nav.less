@@ -94,7 +94,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
+    width: @tablet-width;
   }
 
   .main-nav__toggle {
@@ -107,6 +107,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: @desktop-width;
+  }
+
   .main-nav__logo-image {
     width: 187px;
     height: 96px;
