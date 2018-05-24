@@ -59,7 +59,10 @@
                 <h3 class="box__title">Неродные просторы</h3>
                 <p class="box__text">Автор фото: Борис</p>
               </div>
-              <span class="box__like">1350</span>
+              <span class="box__like">
+                <svg class="box__icon box__icon--like" width="22" height="21"><use xlink:href="#icon-like"></use></svg>
+                1350
+              </span>
             </div>
           </div>
           <div class="gallery__wrapper">
@@ -77,7 +80,10 @@
                   <h3 class="box__title">Местная растительность</h3>
                   <p class="box__text">Автор фото: Сергей</p>
                 </div>
-                <span class="box__like">143</span>
+                <span class="box__like">
+                  <svg class="box__icon box__icon--like" width="22" height="21"><use xlink:href="#icon-like"></use></svg>
+                  143
+                </span>
               </div>
             </div>
             <div class="gallery__box  box">
@@ -94,7 +100,10 @@
                   <h3 class="box__title">Дорога на север</h3>
                   <p class="box__text">Автор фото: Петр</p>
                 </div>
-                <span class="box__like">96</span>
+                <span class="box__like">
+                  <svg class="box__icon box__icon--like" width="22" height="21"><use xlink:href="#icon-like"></use></svg>
+                  96
+                </span>
               </div>
             </div>
             <div class="gallery__box  box">
@@ -111,7 +120,10 @@
                   <h3 class="box__title">Мост дьявола</h3>
                   <p class="box__text">Автор фото: Антон</p>
                 </div>
-                <span class="box__like">254</span>
+                <span class="box__like">
+                  <svg class="box__icon box__icon--like" width="22" height="21"><use xlink:href="#icon-like"></use></svg>
+                  254
+                </span>
               </div>
             </div>
           </div>
@@ -119,9 +131,21 @@
         <section class="video">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не  подорожали в очередной раз!</p>
-          <video>
-            <source src="URL">
-          </video>
+          <div class="video__player">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Дорога">
+            </picture>
+            <div class="video__wrapper">
+              <svg class="video__controls  video__controls--replay" width="16" height="20"><use xlink:href="#icon-video-replay"></use></svg>
+              <svg class="video__controls  video__controls--subtitles" width="32" height="20"><use xlink:href="#icon-video-subtitles"></use></svg>
+              <svg class="video__controls  video__controls--fullscreen" width="20" height="20"><use xlink:href="#icon-video-fullscreen"></use></svg>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">

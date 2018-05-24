@@ -55,6 +55,18 @@
   width: 100%;
   height: 56px;
   border: none;
+  box-sizing: border-box;
+  background-color: @bg-color-secondary;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    border: 3px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 .item__input::placeholder {
@@ -63,7 +75,6 @@
   line-height: 26px;
   font-weight: 700;
   color: @text-color-additional;
-  background-color: @bg-color-secondary;
 }
 
 .item__textarea {
@@ -72,6 +83,16 @@
   background-color: @bg-color-secondary;
   box-sizing: border-box;
   border: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    border: 3px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 .item__textarea::placeholder {
