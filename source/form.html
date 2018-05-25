@@ -51,11 +51,12 @@
           <h1 class="review__title">Оставьте свой отзыв</h1>
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="review__form form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="form__item  item">
-              <legend class="item__title  item__title--left">Представьтесь:</legend>
-              <div class="item__wrapper">
-                <label class="item__label" for="user-name">Имя*:</label>
-                <input class="item__input" id="user-name" type="text" name="user-name" placeholder="Петр" required>
+            <fieldset class="form__item  item  item--leftline">
+              <legend class="item__title  item__title--left item__title--small">Представьтесь:</legend>
+              <div class="item__wrapper-fullname">
+                <div class="item__wrapper">
+                  <label class="item__label" for="user-name">Имя*:</label>
+                  <input class="item__input" id="user-name" type="text" name="user-name" placeholder="Петр" required>
               </div>
               <div class="item__wrapper">
                 <label class="item__label" for="user-surname">Фамилия*:</label>
@@ -65,9 +66,10 @@
                 <label class="item__label  item__label--margin" for="user-patronymic">Отчество:</label>
                 <input class="item__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
               </div>
+              </div>
             </fieldset>
             <fieldset class="form__item  item item--border">
-              <legend class="item__title  item__title--padding">Контактная информация:</legend>
+              <legend class="item__title  item__title--contacts item__title--padding">Контактная информация:</legend>
               <div class="item__wrapper-tel">
                 <div class="item__wrapper-info">
                   <label class="item__label  item__label--mobile" for="user-tel"><span class="item__label-span">Контактный</span> телефон*:</label>
@@ -97,7 +99,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__item  item  item--border">
-              <legend class="item__title  item__title--padding">Посещенные достопримечательности:</legend>
+              <legend class="item__title  item__title--visited  item__title--padding">Посещенные достопримечательности:</legend>
               <ul class="item__checkbox checkbox">
                 <li class="checkbox__option">
                   <input class="visually-hidden  checkbox__input" id="The-Devil's-Bridge" type="checkbox" name="The Devil's Bridge" checked>
@@ -117,8 +119,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__item  item  item--border">
-              <legend class="item__title  item__title--padding">Опишите свои эмоции:</legend>
+            <fieldset class="form__item  item  item--border  item--textarea">
+              <legend class="item__title  item__title--padding ">Опишите свои эмоции:</legend>
               <textarea class="item__textarea" name="user-textarea" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__item button" type="submit">Отправить отзыв</button>
