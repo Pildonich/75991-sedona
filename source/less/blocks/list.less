@@ -1,27 +1,50 @@
 .list {
+  position: relative;
   margin: 0;
-  padding: 42px 0 0 70px;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-top: 34px;
   list-style: none;
 }
-/*
-.list__item {
 
+.list__item {
+  padding-left: 70px;
 }
-*/
+
 .list__title {
   display: block;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
+.list__icon {
+  position: absolute;
+  fill: #81b3d2;
+}
+
+.list__icon--house {
+  top: 25px;
+  left: 20px;
+}
+
+.list__icon--gift {
+  top: 155px;
+  left: 24px;
+}
+
+.list__icon--burger {
+  top: 270px;
+  left: 18px;
+}
+
 .list__text {
-  width: 200px;
+  width: 210px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -29,12 +52,16 @@
   text-transform: uppercase;
 }
 
+.list__text__transference {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .list {
     display: flex;
-    padding: 0 40px;
-    padding-bottom: 65px;
-    padding-top: 165px;
+    padding: 0 45px;
+    padding-bottom: 26px;
+    padding-top: 160px;
     justify-content: space-between;
   }
 
@@ -43,7 +70,9 @@
   }
 
   .list__title {
+    font-size: 21px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .list__text {
@@ -51,16 +80,64 @@
     width: 165px;
     text-align: center;
   }
+
+  .list__item {
+    padding-left: 0;
+  }
+
+  .list__icon--house {
+    width: 75px;
+    height: 72px;
+    top: 62px;
+    left: 90px;
+  }
+
+  .list__icon--gift {
+    width: 64px;
+    height: 75px;
+    top: 57px;
+    left: 607px;
+  }
+
+  .list__icon--burger {
+    width: 77px;
+    height: 68px;
+    top: 63px;
+    left: 345px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .list {
-    padding-bottom: 85px;
-    padding-right: 90px;
-    padding-left: 70px;
+    padding-bottom: 48px;
+    padding-right: 48px;
+    padding-left: 48px;
   }
 
   .list__text {
     width: 300px;
+  }
+
+  .list__text--min {
+    width: 300px;
+  }
+
+  .list__icon--house {
+    top: 62px;
+    left: 162px;
+  }
+
+  .list__icon--gift {
+    top: 57px;
+    left: 968px;
+  }
+
+  .list__icon--burger {
+    top: 63px;
+    left: 562px;
+  }
+
+  .list__text__transference {
+    display: inline;
   }
 }

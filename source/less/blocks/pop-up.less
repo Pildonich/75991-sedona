@@ -33,10 +33,33 @@
   margin: 0 auto;
 }
 
+.pop-up__wrapper {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
 .pop-up--failure .pop-up__button {
   width: 180px;
 }
 
 .pop-up--success .pop-up__button {
   width: 280px;
+}
+
+.pop-up--show {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .pop-up--failure {
+    width: 400px;
+  }
+
+  .pop-up--success {
+    width: 640px;
+  }
+
+  .pop-up__wrapper {
+    padding: 44px 91px;
+  }
 }
