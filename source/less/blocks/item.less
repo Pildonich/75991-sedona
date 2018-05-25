@@ -7,7 +7,7 @@
 .item::before {
   position: absolute;
   content: "";
-  top: -25px;
+  top: -18px;
   left: 0;
   display: block;
   width: 100%;
@@ -18,7 +18,7 @@
 .item__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .item__wrapper:last-child {
@@ -27,7 +27,7 @@
 
 .item__title {
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -50,6 +50,24 @@
   margin-right: 18px;
 }
 
+.item__label--mobile {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 22px;
+}
+
+.item__input--tel {
+  margin-bottom: 15px;
+}
+
+.item__input--email {
+  margin-bottom: 5px;
+}
+
+.item__title--margin {
+  margin-bottom: 20px;
+}
+
 .item__input {
   flex-grow: 2;
   width: 100%;
@@ -57,6 +75,10 @@
   border: none;
   box-sizing: border-box;
   background-color: @bg-color-secondary;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 
   &:hover {
     background-color: #e5e5e5;
@@ -64,13 +86,12 @@
 
   &:active,
   &:focus {
-    border: 3px solid #e5e5e5;
+    outline: 3px solid #e5e5e5;
     background-color: #ffffff;
   }
 }
 
 .item__input::placeholder {
-  padding: 16px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -79,7 +100,10 @@
 
 .item__textarea {
   width: 100%;
-  padding: 15px;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   background-color: @bg-color-secondary;
   box-sizing: border-box;
   border: none;
@@ -90,7 +114,7 @@
 
   &:active,
   &:focus {
-    border: 3px solid #e5e5e5;
+    outline: 3px solid #e5e5e5;
     background-color: #ffffff;
   }
 }
@@ -102,6 +126,10 @@
   line-height: 26px;
   font-weight: 700;
   color: @text-color-additional;
+}
+
+.item--border {
+  margin-bottom: 53px;
 }
 
 @media (min-width: @tablet-width) {

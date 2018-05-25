@@ -1,4 +1,6 @@
 .video {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 141px;
 }
 
@@ -68,6 +70,9 @@
 .video__controls {
   position: absolute;
   fill: #5c6870;
+  background: none;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     fill: #333333;
@@ -135,11 +140,13 @@
       width: 388px;
       top: 45px;
       left: 94px;
+      cursor: pointer;
     }
 
     &::after {
       top: 42px;
       left: 206px;
+      cursor: pointer;
     }
   }
 

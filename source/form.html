@@ -14,6 +14,11 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--opened main-nav--nojs">
+          <!--
+              main-nav--nojs - Класс навигации при выключенном JS у пользователя
+              .main-nav--closed .main-nav__toggle::before - Крестик (закрыть)
+              .main-nav--opened .main-nav__toggle::before - Бургер (меню)
+          -->
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -65,12 +70,12 @@
               <legend class="item__title  item__title--padding">Контактная информация:</legend>
               <div class="item__wrapper-tel">
                 <div class="item__wrapper-info">
-                  <label class="item__label" for="user-tel"><span class="item__label-span">Контактный</span> телефон*:</label>
-                  <input class="item__input" id="user-tel" type="tel" name="user-tel" placeholder="Введите телефон" required>
+                  <label class="item__label  item__label--mobile" for="user-tel"><span class="item__label-span">Контактный</span> телефон*:</label>
+                  <input class="item__input  item__input--tel" id="user-tel" type="tel" name="user-tel" placeholder="Введите телефон" required>
                 </div>
                 <div class="item__wrapper-info">
-                  <label class="item__label" for="user-email">Электронная почта*:</label>
-                  <input class="item__input" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
+                  <label class="item__label  item__label--mobile" for="user-email">Электронная почта*:</label>
+                  <input class="item__input  item__input--email" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </fieldset>
@@ -114,7 +119,7 @@
             </fieldset>
             <fieldset class="form__item  item  item--border">
               <legend class="item__title  item__title--padding">Опишите свои эмоции:</legend>
-              <textarea class="item__textarea" name="user-textarea" rows="9" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="item__textarea" name="user-textarea" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__item button" type="submit">Отправить отзыв</button>
             <p class="form__item  form__item--note">* — обязательные поля</p>
@@ -148,13 +153,13 @@
       <section class="pop-up  pop-up--failure">
         <h3 class="pop-up__title">Что-то пошло не так!</h3>
         <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="pop-up__button button">Ок</button>
+        <button class="pop-up__button button" type="button">Ок</button>
       </section>
       <section class="pop-up  pop-up--success">
         <h3 class="pop-up__title">Ваш отзыв отправлен!</h3>
         <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <div class="pop-up__wrapper">
-          <button class="pop-up__button button">Закрыть окно</button>
+          <button class="pop-up__button button" type="button">Закрыть окно</button>
         </div>
       </section>
     </div>
