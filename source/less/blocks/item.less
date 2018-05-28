@@ -58,12 +58,22 @@
   padding-left: 22px;
 }
 
-.item__input--tel {
-  margin-bottom: 15px;
+.item__icon {
+  position: absolute;
 }
 
-.item__input--email {
-  margin-bottom: 5px;
+.item__icon--phone {
+  width: 18px;
+  height: 18px;
+  top: 99px;
+  left: 263px;
+}
+
+.item__icon--mail {
+  width: 16px;
+  height: 16px;
+  top: 203px;
+  left: 263px;
 }
 
 .item__title--margin {
@@ -102,6 +112,38 @@
   font-weight: 700;
   color: @text-color-additional;
   opacity: 1;
+}
+
+.item__input--tel {
+  background: linear-gradient(to right, @bg-color-secondary 80%, #e6e6e6 20%);
+  padding-right: 60px;
+  margin-bottom: 15px;
+
+  &:hover {
+    background: linear-gradient(to right, #e5e5e5 80%, #e6e6e6 20%);
+  }
+
+  &:active,
+  &:focus {
+    outline: 3px solid #e5e5e5;
+    background: linear-gradient(to right, #ffffff 80%, #e6e6e6 20%);
+  }
+}
+
+.item__input--email {
+  background: linear-gradient(to right, @bg-color-secondary 80%, #e6e6e6 20%);
+  padding-right: 60px;
+  margin-bottom: 5px;
+
+  &:hover {
+    background: linear-gradient(to right, #e5e5e5 80%, #e6e6e6 20%);
+  }
+
+  &:active,
+  &:focus {
+    outline: 3px solid #e5e5e5;
+    background: linear-gradient(to right, #ffffff 80%, #e6e6e6 20%);
+  }
 }
 
 .item__textarea {
@@ -184,13 +226,37 @@
   }
 
   .item__input--tel {
+    background: linear-gradient(to right, @bg-color-secondary 91%, #e6e6e6 19%);
     height: 57px;
     margin-bottom: 27px;
+
+    &:active,
+    &:focus {
+      outline: 3px solid #e5e5e5;
+      background: linear-gradient(to right, #ffffff 91%, #e6e6e6 19%);
+    }
   }
 
   .item__input--email {
+    background: linear-gradient(to right, @bg-color-secondary 91%, #e6e6e6 19%);
     height: 57px;
     margin-bottom: 10px;
+
+    &:active,
+    &:focus {
+      outline: 3px solid #e5e5e5;
+      background: linear-gradient(to right, #ffffff 91%, #e6e6e6 19%);
+    }
+  }
+
+  .item__icon--phone {
+    top: 103px;
+    left: 610px;
+  }
+
+  .item__icon--mail {
+    top: 218px;
+    left: 611px;
   }
 
   .item__title--visited {
@@ -235,11 +301,35 @@
   }
 
   .item__input--tel {
+    background: linear-gradient(to right, @bg-color-secondary 82%, #e6e6e6 18%);
     margin-bottom: 0;
+
+    &:active,
+    &:focus {
+      outline: 3px solid #e5e5e5;
+      background: linear-gradient(to right, #ffffff 82%, #e6e6e6 18%);
+    }
   }
 
   .item__input--email {
+    background: linear-gradient(to right, @bg-color-secondary 82%, #e6e6e6 18%);
     margin-bottom: 0;
+
+    &:active,
+    &:focus {
+      outline: 3px solid #e5e5e5;
+      background: linear-gradient(to right, #ffffff 82%, #e6e6e6 18%);
+    }
+  }
+
+  .item__icon--phone {
+    top: 120px;
+    left: 363px;
+  }
+
+  .item__icon--mail {
+    top: 121px;
+    left: 923px;
   }
 
   .item__label--mobile {
